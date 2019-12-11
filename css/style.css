@@ -410,7 +410,8 @@ body {
 	float: right;
 	width: 275px;
 	height: 310px;
-	/* background-color: #fdbe01; */
+	background: url(../images/serch.png) no-repeat 0 100px ;
+	background-size: 100%;
 	background-color: #f4f4f4;
 }
 .main_cont_wrap .main_cont .main_top .main_campus span {
@@ -452,9 +453,12 @@ body {
 	z-index: 5;
 }
 .main_cont_wrap .main_cont .main_top .main_campus .campus_find dd ul li{
-	padding: 10px 0 5px 0;
 	width: 100%;
 	text-indent: 10px;
+}
+.main_cont_wrap .main_cont .main_top .main_campus .campus_find dd ul li a{
+	display: block;
+	padding: 10px 0 5px 0;
 }
 .main_cont_wrap .main_cont .main_top .main_campus .campus_find dd ul li:hover{
 	background-color: #038d42;
@@ -503,23 +507,36 @@ body {
 	background-color: #f6e8b6;
 }
 .main_cont_wrap .main_cont .main_top .main_campus dl.sel_center ul li{
-	padding: 10px 0 5px 0;
 	width: 100%;
 	text-indent: 10px;
 	transition: background-color 0.3s;
+}
+.main_cont_wrap .main_cont .main_top .main_campus dl.sel_center ul li a{
+	display: block;
+		padding: 10px 0 5px 0;
 }
 .main_cont_wrap .main_cont .main_top .main_campus dl.sel_center ul li:hover{
 	background-color: #fff;
 }
 .main_cont_wrap .main_cont .main_top .main_campus img {
-	width: 275px;
-	height: 150px;
+	max-width: 100%;
 }
 .main_cont_wrap .main_cont .main_top .main_campus .more{
 	display: block;
 	font-size: 0.897em;
 	text-align: center;
-	color: #000;
+	color: #fff;
+	width: 150px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #038d42;
+	padding: 10px 0;
+	letter-spacing: -1px;
+}
+.main_cont_wrap .main_cont .main_top .main_campus select,
+.main_cont_wrap .main_cont .main_top .main_campus button{
+	display: none;
 }
 /**/
 .main_cont_wrap .main_cont .main_bottom {
@@ -611,7 +628,7 @@ body {
 	float: left;
 	width: 184px;
 	height: 184px;
-	background-color: #038d42;
+	background-color: #f4f4f4;
 	text-align: center;
 }
 .main_cont_wrap .main_cont .main_bottom .main_camedia p.title {
@@ -637,9 +654,11 @@ body {
 	background-color: #ccc;
 	text-indent: -999px;
 	overflow: hidden;
+	transition: width 0.3s, background-color 0.3s;;
 }
 .main_cont_wrap .main_cont .main_bottom .main_camedia .campus_pager li a.active {
-	background-color: #fff;
+	background-color: #038d42;
+	width: 25px;
 }
 
 /**/
@@ -647,20 +666,36 @@ body {
 	float: left;
 	position: relative;
 	width: 368px;
+	height: 184px;
+	overflow: hidden;
+}
+.main_cont_wrap .main_cont .main_bottom .main_admissions ul {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1104px;
 	height: 310px;
 }
-.main_cont_wrap .main_cont .main_bottom .main_admissions img.over {
+.main_cont_wrap .main_cont .main_bottom .main_admissions li {
+	float: left;
+	width: 368px;
+	overflow: hidden;
+}
+.main_cont_wrap .main_cont .main_bottom .main_admissions li img {
+max-width: 100%;
+}
+/* .main_cont_wrap .main_cont .main_bottom .main_admissions img.over {
 	position: absolute;
 	left: 0;
 	top: 0;
 	opacity: 0;
 	transition: opacity 0.3s;
-}
-.main_cont_wrap .main_cont .main_bottom .main_admissions a:hover img.over,
-.main_cont_wrap .main_cont .main_bottom .main_admissions a:focus img.over {
+} */
+/* .main_cont_wrap .main_cont .main_bottom .main_admissions a:hover img.over,
+.main_cont_wrap .main_cont .main_bottom .main_admissions a:focus img {
 	opacity: 1;
 	background-color: rgba(255, 255, 255, 0.5);
-}
+} */
 .main_cont_wrap .main_cont .main_bottom .store {
 	float: left;
 	position: relative;
@@ -782,12 +817,13 @@ body {
 #footer .footer_menu .footer_menu_inner {
 	width: 1200px;
 	margin: 0 auto;
+	text-align: center;
 }
 #footer .footer_menu .footer_menu_inner .banner_moving ul li {
 	display: inline-block;
 	position: relative;
-	text-align: center;
 	padding-top: 20px;
+	width: 20%;
 }
 #footer .footer_menu .footer_menu_inner .banner_moving ul li::after {
 	content: "";
@@ -820,14 +856,14 @@ body {
 #footer .footer_info .footer_info_inner {
 	width: 1200px;
 	margin: 0 auto;
+	text-align: center;
+	padding: 10px 0;
 }
 #footer .footer_info .footer_info_inner address {
-	float: left;
 	margin-left: 80px;
-	margin-top: 20px;
 	color: #fff;
 	font-style: normal;
-	font-size: 0.897em;
+	font-size: 0.75em;
 }
 #footer .footer_info .footer_info_inner address a {
 	color: #000;
@@ -879,4 +915,4 @@ body {
 }
 .dim.active{
 	opacity: 0;
-} */
+}
